@@ -1,4 +1,4 @@
-![image](./prueba-ae/src/assets/readme/preview.gif)
+![image](./src/assets/readme/preview.gif)
 
 # Prueba técnica Front-End
 
