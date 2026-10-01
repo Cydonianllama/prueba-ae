@@ -1,0 +1,16 @@
+extends ../layouts/base
+
+block content
+    //- Replica el componente de Figma con marcado semántico, BEM y accesibilidad en mente.
+    //- Deben existir seis tarjetas; solo las tres primeras son visibles inicialmente.
+    //- Los recursos de imagen están en src/assets/images/articles.
+    //- Es un plus usar iteraciones, interpolación o mixins cuando aporten claridad.
+    -
+        const articles = [
+            { photo: 1, date: 'June 18, 2026', datetime: '2026-06-18', timeToRead: 5, title: 'Medicare and ACA Open Enrollment Staffing: The Six-Month Member Services Model', excerpt: 'Why treating open enrollment as a fire drill costs you the months that follow, and what a six-month dedicated team fixes that seasonal hiring cannot.' },
+            { photo: 2, date: 'June 25, 2026', datetime: '2026-06-25', timeToRead: 7, title: 'The Six Roles That Make or Break Member Services', excerpt: 'The six roles that carry a Medicare or ACA book through the full season, and what breaks member experience when one is missing.' },
+            { photo: 3, date: 'June 29, 2026', datetime: '2026-06-29', timeToRead: 6, title: 'The New Star Ratings Math: Why Member Experience Is Now the Revenue Lever', excerpt: 'How member-experience weighting moves your Medicare Star Rating and your ACA Quality Rating, and why your call center now decides next year\'s revenue.' },
+            { hidden: true, photo: 1, date: 'June 18, 2026', datetime: '2026-06-18', timeToRead: 5, title: 'Medicare and ACA Open Enrollment Staffing: The Six-Month Member Services Model', excerpt: 'Why treating open enrollment as a fire drill costs you the months that follow, and what a six-month dedicated team fixes that seasonal hiring cannot.' },
+            { hidden: true, photo: 2, date: 'June 25, 2026', datetime: '2026-06-25', timeToRead: 7, title: 'The Six Roles That Make or Break Member Services', excerpt: 'The six roles that carry a Medicare or ACA book through the full season, and what breaks member experience when one is missing.' },
+            { hidden: true, photo: 3, date: 'June 29, 2026', datetime: '2026-06-29', timeToRead: 6, title: 'The New Star Ratings Math: Why Member Experience Is Now the Revenue Lever', excerpt: 'How member-experience weighting moves your Medicare Star Rating and your ACA Quality Rating, and why your call center now decides next year\'s revenue.' }
+        ]
