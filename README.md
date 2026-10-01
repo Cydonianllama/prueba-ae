@@ -1,3 +1,5 @@
+![image](prueba-ae\src\assets\readme\preview.gif)
+
 # Prueba técnica Front-End
 
 Starter autocontenido para una prueba remota. Los recursos necesarios para replicar la interfaz acompañan al proyecto.

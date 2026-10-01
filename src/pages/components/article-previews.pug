@@ -1,0 +1,13 @@
+mixin article-previews(article)
+  article(class=`c-articles-previews ${article.hidden ? 'hidden' :  ''} `)
+    div.c-articles-previews__header
+      image.c-articles-previews__image(src=`/src/assets/images/articles/article-lg-${article.photo}.webp`)
+    div.c-articles-previews__content
+      div.c-articles-previews__content-section
+        div.c.articles-preview__topsection
+          span.c-articles-previews__date=`${article.date} .`
+          span.c-articles-previews__time=`${article.datetime}`
+        h2.c-articles-previews__title=`${article.title}`
+      div.c-articles-previews__content-section
+        p.c-articles-previews__excerpt=`${article.excerpt}`
+        a.c-articles-previews__cta Read more
